@@ -5,6 +5,7 @@ class CreateContatos < ActiveRecord::Migration
       t.string :endereco
       t.string :telefone
 
+
       t.timestamps
     end
   end
