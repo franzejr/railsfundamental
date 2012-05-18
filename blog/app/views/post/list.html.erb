@@ -1,0 +1,10 @@
+<h1>Listagem dos posts</h1>
+<ul>
+<% @post.each do |x| %>
+<li>
+	<b><%=  link_to x.nome , show_post_path(x) %></b> <br/>
+	<%= x.conteudo %> 
+</li>
+<% end %>
+
+</ul>

@@ -1,0 +1,9 @@
+<%= javascript_tag do %>
+  $().ready(function() { 
+    $('#elfinder').elfinder({ 
+      url: '/elfinder',
+      lang: 'en'
+    })
+  })
+<% end %>
+<div id='elfinder'></div>

@@ -1,7 +1,14 @@
 Blog::Application.routes.draw do
-  resources :posts
+  get "post/index"
 
-  resources :categoria
+  match "post/show/:id/" => "post#show", :via => :get , :as => "show_post"
+
+  get "post/edit"
+
+  get "post/list"
+
+  get "post/new", :as => "posts"
+  post "post/create", :as => "posts"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

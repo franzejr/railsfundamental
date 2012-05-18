@@ -41,6 +41,8 @@ class ContatosController < ApplicationController
   # POST /contatos.json
   def create
     @contato = Contato.new(params[:contato])
+    @contato.endereco = Endereco.new(params[:endereco])
+
 
     respond_to do |format|
       if @contato.save

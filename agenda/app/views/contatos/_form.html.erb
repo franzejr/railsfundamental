@@ -19,6 +19,12 @@
     <%= f.label :telefone %><br />
     <%= f.text_field :telefone %>
   </div>
+  <%= f.fields_for :endereco do |endereco_fields| %>
+    <div class="field">
+      <%= endereco_fields.label :nome %><br />
+      <%= endereco_fields.text_field :nome %>
+    </div>
+  <% end %>
   <div class="actions">
     <%= f.submit  %>
   </div>
