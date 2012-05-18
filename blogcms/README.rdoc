@@ -1,0 +1,12 @@
+== Welcome to Sample Application using Refinery CMS
+
+Rails is a web-application framework that includes everything needed to create
+database-backed web applications according to the Model-View-Control pattern.
+
+
+== Getting Started 
+
+This is a implementation using the refinerycms gem:
+http://refinerycms.com/
+
+
